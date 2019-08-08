@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="fontello-e05dde7f/css/fontello.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  .slowing{margin-top: 5%;
+  margin-bottom: 5%;}
+  .moving{padding: 10px; border-radius: 100%;
+    width: 55px; height: 55px;
+  border: 1px solid;
+  font-size: 15px;
+  text-align: center;
+}
+  .total{display: inline-flex;
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+  .tree{
+      color:#393939;
+      list-style: none;
+      display: inline-flex;
+      margin-left: 80%;
+      font-size: 30px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .tree *:before{
+      width:17px;
+      height:17px;
+      display:inline-block;
+    }
+        .tree label{
+      cursor: pointer;
+    }
+    .tree label:before{
+      content:'\e802';
+      font-family: fontello;
+    }
+    .tree input[type="checkbox"] {
+  display: none;
+}
+.tree input[type="checkbox"]:checked~ul {
+  display: none;
+}
+.tree input[type="checkbox"]:checked+label:before{
+  content:'\e800';
+  font-family: fontello;
+  color: red;
+  list-style: none;
+
+}
+  .left-box {
+
+  float: left;
+  width: 40%;
+}
+.right-box {
+
+  float: right;
+  width: 60%;
+}
+    .site_detail_container .site_title { margin-top: 0% ; margin-left: 5%; text-align: left; padding-bottom: 0; font-size: 4rem; font-style: serif;
+    padding-bottom: 0;}
+    .navbar-nav {margin-left:30%; font size: 30rem;}
+    .site_short_description {margin-left: 20px;}
+    .icons {color: red;
+      margin-left: 50%;
+    font-size: 20px;
+    margin-top:0;
+  display: inline-flex;
+  padding-top: 0;
+}
+
+  </style>
+  <div class='left-box'></div>
+  <div class='right-box'></div>
+</head>
+<body>
+
+  <div class="left-box">
+          <div class="site_detail_container">
+            <h1 class="site_title">돈키호테의 마을</h1>
+            <ul class="tree">
+                    <li class = "villeage-icon">
+                      <input type="checkbox" id="root">
+                      <label for="root"></label>
+                    <li>&ensp;</li>
+
+
+
+                    <li><a href='#' class="icon-upload"><span class="label"></span></a></li>
+            </ul>
+          <div class="site_short_description">책 속에서 돈키호테가 지나쳤던 마을. 실제로 많은 여행객들이<br> 돈키호테를 생각하며 패키지로도 다니기도 한다 ~~~~~~</div>
+          <div class="total">
+          <div class="moving">
+            <div>El <br>Toboso</div>
+          </div>
+          <div class="slowing">
+            <div>----</div>
+          </div>
+          <div class="moving">
+            <div>Ossa de<br> Montiel</div>
+                </div>
+          <div class="slowing">
+            <div>----</div>
+          </div>
+          <div class="moving">
+            <div>Conu<br>segra</div>
+          </div>
+        </div>
+
+
+          <div class="cafe_main_image_container">
+              <img src="a.jpg" class="site_main_image img-fluid" />
+
+          </div>
+        </div>
+
+    </div>
+
+  <div class="right-box">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+
+
+
+</body>
+</html>
