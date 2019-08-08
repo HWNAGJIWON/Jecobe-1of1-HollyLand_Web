@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)file:///C:/Users/jiwon/Desktop/hollyLand/myPage.html -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <title>마이페이지</title>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <style>
+    .country {
+      padding: 0;
+      margin: 0;
+    }
+    .btnLR{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .country_picture {
+      width: auto;
+      height: 170px;
+      overflow-x: scroll;
+      white-space: nowrap;
+    }
+
+    .text {
+      font-size: 17px;
+
+    }
+
+    .header {
+      height: 100px;
+    }
+
+    .container {
+      padding: 50px;
+    }
+
+    .profile {
+      margin: 30px;
+    }
+
+    .profile_image {
+      float: left;
+      width: 150px;
+      height: 150px;
+      border: 1px solid lightgray;
+      background-color: lightgray;
+      border-radius: 75px;
+    }
+
+    .profile_inform {
+      padding: 30px 50px 50px 200px;
+    }
+
+    .user_name {
+      font-size: 1.8em;
+    }
+
+    .country_picture::-webkit-scrollbar {
+      width: 10px;
+      background: transparent;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header"></div>
+    <h1>마이페이지</h1>
+    <div class="profile">
+      <div class="profile_image">
+
+      </div>
+      <div class="profile_inform">
+        <b class="user_name">OOO 님</b><br>
+        <a href="file:///C:/Users/jiwon/Desktop/hollyLand/myPage.html" class="user_inform">프로필 수정</a><br>
+        <a href="file:///C:/Users/jiwon/Desktop/hollyLand/myPage.html" class="user_inform">계정 수정</a><br>
+      </div>
+      </div>
+
+
+
+
+      <div class="country" class="container">
+        <div class="country_name" class="row2">
+          <img class="flag" src="img\Flag_of_Spain.png" width="50px" height="30px" >스페인 - 돈키호테 마을
+          <br><br>
+          <div class="wrap">
+            <div class="country_picture" height="150px">
+              <img src="img\spain_cathedral.png" width="250px" alt=""height="150px">
+              <img src="img\spain_beach.png" width="250px" height="150px">
+              <img src="img\spain_windmill.png" width="250px" height="150px">
+              <img src="img\spain_windmill.png" width="250px" height="150px">
+              <img src="img\spain_windmill.png" width="250px" height="150px">
+              <img src="img\spain_toledo.jpg" width="250px" height="150px">
+              <img src="img\spain_beach.png" width="250px" height="150px">
+              $(document).ready(function() {
+                $('#moveleft').bind('click', function() {
+                  $('.country_picture').animate({
+                    scrollLeft: '+=100'
+                  }, 680,"swing");
+                });
+                $('#moveright').bind('click', function() {
+                  $('.country_picture').animate({
+                    scrollLeft: '-=100'
+                  }, 680,"swing");
+                });
+
+            </div>
+              <!--country_picture -->
+            </div><!-- column-->
+
+          </div><!-- country_name-->
+
+
+
+            // 애니메이션 효과로 자연스럽게 이동됨, 0.68초
+            // 애니메이션 효과없이 즉시 해당 위치 0 지점으로 이동함
+          });
+        </script>
+        <br><br>
+        <div class="country" class="container-fuild">
+          <div class="country_name" class="row2">
+            <img class="flag" src="img\Flag_of_South_Korea.png" width="50px" height="30px" >대한민국 - 제주 00마을
+            <br><br>
+            <div class="wrap">
+              <div class="country_picture" height="150px">
+                <img src="img\jeju_beach_and_road.png" width="250px" alt=""height="150px">
+                <img src="img\jeju_beach_and_road.png" width="250px" height="150px">
+                <img src="img\jeju_field.png" width="250px" height="150px">
+                <img src="img\jeju_rape_blosomes.png" width="250px" height="150px">
+                <img src="img\jeju_rape_blosomes.png" width="250px" height="150px">
+                <img src="img\jeju_field.png" width="250px" height="150px">
+                <img src="img\jeju_rape_blosomes.png" width="250px" height="150px">
+
+            </div>
+                <!--country_picture -->
+              </div><!-- column-->
+
+            </div><!-- country_name-->
+
+          </div><!-- country-->
+</body>
+
+</html>
