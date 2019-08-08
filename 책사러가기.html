@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .eltoboso-search a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .item-list:hover {
+      background-color: rgba(93, 93, 93, 0.6);
+
+    }
+
+    .item-list {
+      color: #3d3d3d;
+      position: relative;
+      cursor: pointer;
+      display: block;
+      overflow: hidden;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      vertical-align: middle;
+      z-index: 1;
+      transition: .3s ease-out;
+
+    }
+
+    .modal-window {
+      position: fixed;
+      background-color: rgba(1, 1, 1, 0.15);
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 999;
+      opacity: 0;
+      pointer-events: none;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    .modal-window:target {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-window_div {
+      width: 400px;
+      position: relative;
+      margin: 10% auto;
+      padding: 2rem;
+      background: #f3f3f3;
+      color: #444;
+    }
+
+    .modal-window header {
+      font-weight: bold;
+    }
+
+    .modal-close {
+      color: #aaa;
+      line-height: 50px;
+      font-size: 80%;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0;
+      width: 70px;
+      text-decoration: none;
+    }
+
+    .modal-close:hover {
+      color: #000;
+    }
+
+    < !-- .modal-window h1 {
+      font-size: 150%;
+      margin: 0 0 15px;
+    }
+
+    -->.btn,
+    .btn-large,
+    .btn-flat {
+      border: none;
+      border-radius: 2px;
+      display: inline-block;
+      height: 36px;
+      line-height: 36px;
+      padding: 0 2rem;
+      text-transform: uppercase;
+      vertical-align: middle;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn,
+    .btn-large {
+      text-decoration: none;
+      color: white;
+      background-color: #26a69a;
+      text-align: center;
+      letter-spacing: .5px;
+      transition: .2s ease-out;
+      cursor: pointer;
+    }
+
+    .btn,
+    .btn-large,
+    .btn-floating,
+    .btn-large,
+    .btn-flat {
+      font-size: 1rem;
+      outline: 0;
+    }
+
+    .eltoboso-search li:before {
+      content: '\e802';
+      font-family: fontello;
+    }
+
+    .eltoboso-search li {
+      display: inline;
+      text-decoration: none;
+    }
+
+    <!-- 미란 추가 -->
+.donimg{
+float:left;
+}
+.book_inform{
+  padding:30px;
+  width:30%;
+  float:left;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="eltoboso-search">
+    <a href="#open-moda"><li>책 정보</li></a>
+    <div id="open-moda" class="modal-window">
+      <div class="modal-window_div">
+        <a href="#modal-close" title="Close" class="modal-close">Close</a>
+          <img class="donimg" float="left" src="img/돈키호테책.jpg" width="150" height="200" alt="">
+
+          <div class="book_inform">
+          돈키호테<br>
+          돈키호테의 줄거리는 이것저것 책사러가기 이것저것입니다.
+          </div>
+        <br><br>
+        <center>
+        <a class="btn" href="https://www.kyobobook.co.kr/search/SearchCommonMain.jsp?vPstrCategory=TOT&vPoutSearch=1&vPstrKeyWord=%B5%B7%C5%B0%C8%A3%C5%D7&orderClick=LBP">책 사러 가기</a></center>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
