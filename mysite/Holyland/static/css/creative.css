@@ -48,6 +48,11 @@
   box-sizing: border-box;
 }
 
+.tomandtom {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 15px;
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -10591,6 +10596,10 @@ hr.light {
 .page-section {
   padding: 8rem 0;
 }
+.footer-section {
+  padding: 0 0;
+    
+}
 
 #mainNav {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -10756,7 +10765,7 @@ header.masthead h1 {
 }
 
 .masterhead-container {
-  width: 55%;
+  width: auto;
   margin-top: 5%;
   margin-right: auto;
   margin-left: 50%;
@@ -10765,3 +10774,18 @@ header.masthead h1 {
 .mt-10 {
   margin-top: 10%
 }
+
+.mr-half {
+    margin-right: 50%
+}
+
+.nav-btn-position {
+    padding-left:100px;
+    padding-right:0;
+    
+}
+
+.btn-align-right {
+    align-items:right;
+}
+

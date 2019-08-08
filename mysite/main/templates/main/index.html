@@ -10,10 +10,12 @@
   <meta name="author" content="">
 
   <title>Creative - Start Bootstrap Theme</title>
+    
 
+    
   <!-- Font Awesome Icons -->
   <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
-
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,900|Noto+Sans+TC:900&display=swap&subset=korean" rel="stylesheet">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -30,10 +32,18 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">LOGO</a>
-      <a class="navbar-brand navbar-name js-scroll-trigger asd" href="#page-top">HOLY LAND</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container row">
+        <div class="col-4">
+                <div class="col-7">
+                    <img class="img-fluid" src="{% static 'img/logo_red.png' %}" alt="">
+                </div>
+
+        </div>
+        <div class="col-4 tomandtom">
+            <a class="navbar-brand navbar-name js-scroll-trigger asd" href="#page-top">HOLY LAND</a>
+        </div>
+        <div class="col-4 btn btn-align-right">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -50,6 +60,10 @@
           </li>
         </ul>
       </div>
+        </div>
+      <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">LOGO</a> -->
+      
+      
     </div>
   </nav>
 
@@ -64,7 +78,7 @@
         <div class="col-lg-8 align-self-baseline">
           <p class="text-white-75 font-weight-light mb-5">Want to get away from ordinary and boring travel plans? <br>If so,
 be the hero of this scene right now!</p>
-          <a class="btn btn-light btn-xl js-scroll-trigger" href="#portfolio">지도에서 여행지 찾기</a>
+          <a class="btn btn-light btn-xl js-scroll-trigger" href="#portfolio">I want it!</a>
         </div>
       </div>
     </div>
@@ -100,7 +114,7 @@ be the hero of this scene right now!</p>
                   Category
                 </div>
                 <div class="project-name">
-                  알라딘
+                  그랜드부다페스트호텔
                 </div>
               </div>
             </a>
@@ -113,7 +127,7 @@ be the hero of this scene right now!</p>
                   Category
                 </div>
                 <div class="project-name">
-                  그 많던 시간은 누가 다 먹었을까?
+                  Arabian Nights
                 </div>
               </div>
             </a>
@@ -126,7 +140,7 @@ be the hero of this scene right now!</p>
                   Category
                 </div>
                 <div class="project-name">
-                  Project Name
+                  그 많던 싱아는 누가 다 먹었을까?
                 </div>
               </div>
             </a>
@@ -139,7 +153,7 @@ be the hero of this scene right now!</p>
                   Category
                 </div>
                 <div class="project-name">
-                  Project Name
+                  LALA LAND
                 </div>
               </div>
             </a>
@@ -152,7 +166,7 @@ be the hero of this scene right now!</p>
                   Category
                 </div>
                 <div class="project-name">
-                  Project Name
+                  "Winter is comming"
                 </div>
               </div>
             </a>
@@ -169,7 +183,7 @@ be the hero of this scene right now!</p>
       <div class="row">
         <div class="col-6 pl-5 text-center">
           <h4 class="text-primary mt-0">Reason to be active</h4>
-          <h2 class="text-black mt-0">돈키호테의 성지 스페인</h2>
+          <h2 class="text-black mt-0">돈키호테의 성지, 스페인</h2>
           <hr class="divider my-4">
           <p class="text-primary-50 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci provident, amet quas magnam quae, fugit accusantium vitae vero, earum odio, dolore officia. Delectus doloribus expedita placeat laborum blanditiis et rem.</p>
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="https://summer-qriyc.run.goorm.io/detail/">자세히 알아보기!</a>
@@ -182,18 +196,20 @@ be the hero of this scene right now!</p>
   </section>
 
   <!-- About2 Section -->
-  <section class="page-section bg-white mt-5" id="about2">
+  <section class= "page-section bg-white mt-5 pl-5" id="about2">
     <div class="container-fluid p-0">
-      <div class="row">
-        <div class="col-6 pl-5 text-center">
-          <h4 class="text-primary mt-0">Reason to be active</h4>
-          <h2 class="text-black mt-0">알라딘의 ㅁㄴㅇㅁㄴㅇ</h2>
-          <hr class="divider my-4">
-          <p class="text-primary-50 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim optio vel tempore natus vitae facilis, et repellendus quia animi minus pariatur alias doloremque perspiciatis quo facere eos iste. Enim, nostrum!</p>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="https://summer-qriyc.run.goorm.io/detail/">자세히 알아보기!</a>
+       <div class="row">
+        <div class="col-6 pl-5">
+          <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/2.jpg' %}" alt="">
         </div>
-        <div class="col-6">
-          <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/1.jpg' %}" alt="">
+       
+        <div class="col-6 pr-5 text-center">
+          <h4 class="text-primary mt-0">Reason to be active</h4>
+          <h2 class="text-black mt-0">그랜드 부다페스트 호텔</h2>
+          <hr class="divider my-4">
+          <p class="text-primary-50 mb-4">세계 최고 부호 마담 D.피살...
+            <br>그녀의 죽음을 둘러싼 기상천외한 사건</p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="https://summer-qriyc.run.goorm.io/detail/">자세히 알아보기!</a>
         </div>
       </div>
     </div>
@@ -205,18 +221,24 @@ be the hero of this scene right now!</p>
       <div class="row">
         <div class="col-6 pl-5 text-center">
           <h4 class="text-primary mt-0">Reason to be active</h4>
-          <h2 class="text-black mt-0">그 많던 시간은 누가 다 먹었을까? - 현저동</h2>
+          <h2 class="text-black mt-0">당신의 지니를 찾아 떠나세요!</h2>
           <hr class="divider my-4">
-          <p class="text-primary-50 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ducimus laudantium ea voluptatem porro laboriosam suscipit atque ab explicabo fugiat est, minus illum inventore incidunt sequi obcaecati praesentium molestias doloremque.</p>
+          <p class="text-primary-50 mb-4">지도로 세상을 바라볼 순 없어요.
+            <br>세상을 직접 바라봐야 해요.</p>
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="https://summer-qriyc.run.goorm.io/detail/">자세히 알아보기!</a>
         </div>
         <div class="col-6">
-          <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/1.jpg' %}" alt="">
+          <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/3.jpg' %}" alt="">
         </div>
       </div>
     </div>
   </section>
+  <section class="footer-section">
+      <img class="img-fluid" src="{% static 'img/footer.png' %}" alt="">
+  </section>
 
+    
+    
   <!-- Bootstrap core JavaScript -->
   <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
   <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
