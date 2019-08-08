@@ -14,3 +14,5 @@ def signup(request):
 
 def detail(request):
     return render(request, 'main/detail.html')
+def detail2(request):
+    return render(request, 'main/detail2.html')
