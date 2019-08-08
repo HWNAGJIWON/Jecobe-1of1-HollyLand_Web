@@ -5,6 +5,19 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>MY PAGE</title>
+      <!-- Font Awesome Icons -->
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,900|Noto+Sans+TC:900&display=swap&subset=korean" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="{% static 'vendor/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="{% static 'css/creative.css' %}" rel="stylesheet">
+
       <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <style>
     .container2{
@@ -67,14 +80,51 @@
     </style>
 </head>
 <body>
+     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container row">
+        <div class="col-4">
+                <div class="col-7">
+                    <img class="img-fluid" src="{% static 'img/logo_red.png' %}" alt="">
+                </div>
+
+        </div>
+        <div class="col-4 tomandtom">
+            <a class="navbar-brand navbar-name js-scroll-trigger asd" href="#page-top">HOLY LAND</a>
+        </div>
+        <div class="col-4 btn btn-align-right">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/mypage/" >마이페이지</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://summer-qriyc.run.goorm.io/signin/" >로그인</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://summer-qriyc.run.goorm.io/signup/">회원가입</a>
+          </li>
+        </ul>
+      </div>
+        </div>
+      <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">LOGO</a> -->
+      
+      
+    </div>
+  </nav>
+    
     <div class="container">
     <div class="header"></div>
     <h1>마이페이지</h1>
     <div class="profile">
-    <div class="profile_image">
+        <div>
+    <img class="profile_image" src="{% static 'img\jeju_miran.jpg' %}">
     </div>
     <div class="profile_inform">
-        <b class="user_name">OOO 님</b><br>
+        <b class="user_name">이미란 님</b><br>
         <a href="       "
            class="user_inform">프로필 수정</a><br>
         <a href="       "
