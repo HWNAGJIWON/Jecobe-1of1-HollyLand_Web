@@ -1,10 +1,28 @@
 <!DOCTYPE html>
+<!-- saved from url=(0052)file:///C:/Users/jiwon/Desktop/hollyLand/myPage.html -->
 <html lang="en" dir="ltr">
-
 <head>
-  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
   <title>마이페이지</title>
   <style>
+    .country{
+      padding: 0;
+      margin: 0;
+    }
+    .country_picture{
+      width: auto;
+       height: 170px;
+       overflow-x: scroll;
+       white-space:nowrap;
+    }
+
+    .text{
+      font-size: 17px;
+
+    }
     .header {
       height: 100px;
     }
@@ -34,12 +52,11 @@
       font-size: 1.8em;
     }
 
-    .box {
-      overflow-x: scroll;
-      overflow-y: visible;
-      height: 150px fix;
-      width: auto;
+    .country_picture::-webkit-scrollbar {
+    width: 10px;
+    background: transparent;
     }
+
   </style>
 </head>
 
@@ -53,42 +70,53 @@
       </div>
       <div class="profile_inform">
         <b class="user_name">OOO 님</b><br>
-        <a href="" class="user_inform">프로필 수정</a><br>
-        <a href="" class="user_inform">계정 수정</a><br>
+        <a href="file:///C:/Users/jiwon/Desktop/hollyLand/myPage.html" class="user_inform">프로필 수정</a><br>
+        <a href="file:///C:/Users/jiwon/Desktop/hollyLand/myPage.html" class="user_inform">계정 수정</a><br>
       </div>
       </div>
-      <div class="row-header-title">
-        <div>
-          <img src="img\Flag_of_Spain.png" width="50px" height="30px">스페인 - 돈키호테 마을
+
+
+
+
+      <div class="country" class="container">
+        <div class="country_name" class="row2">
+          <img class="flag" src="img\Flag_of_Spain.png" width="50px" height="30px" >스페인 - 돈키호테 마을
           <br><br>
-          <div class="img-title-card box">
-            <div class="image_total">
-              <img src="img\spain_cathedral.png" width="250px" height="150px">
+          <div class="wrap">
+            <div class="country_picture" height="150px">
+              <img src="img\spain_cathedral.png" width="250px" alt=""height="150px">
               <img src="img\spain_beach.png" width="250px" height="150px">
+              <img src="img\spain_windmill.png" width="250px" height="150px">
+              <img src="img\spain_windmill.png" width="250px" height="150px">
               <img src="img\spain_windmill.png" width="250px" height="150px">
               <img src="img\spain_toledo.jpg" width="250px" height="150px">
               <img src="img\spain_beach.png" width="250px" height="150px">
-       </div>
-            </div>
-            <div class="img-title-card box">
-              <div class="image_total">
-                <img src="img\spain_cathedral.png" width="250px" height="150px">
-                <img src="img\spain_beach.png" width="250px" height="150px">
-                <img src="img\spain_windmill.png" width="250px" height="150px">
-                <img src="img\spain_toledo.jpg" width="250px" height="150px">
-                <img src="img\spain_beach.png" width="250px" height="150px">
-       </div>
-              </div>
-            </div>
-            <div class="row-header-title">
 
-            </div>
-            <div class=" slider spot">
+            </div><!--country_picture -->
+        </div><!-- column-->
 
-            </div>
-          </div>
+        </div><!-- country_name-->
 
-        </div>
-</body>
+      </div><!-- country-->
+      <br><br>
+      <div class="country" class="container-fuild">
+        <div class="country_name" class="row2">
+          <img class="flag" src="img\Flag_of_South_Korea.png" width="50px" height="30px" >대한민국 - 제주 00마을
+          <br><br>
+          <div class="wrap">
+            <div class="country_picture" height="150px">
+              <img src="img\jeju_beach_and_road.png" width="250px" alt=""height="150px">
+              <img src="img\jeju_beach_and_road.png" width="250px" height="150px">
+              <img src="img\jeju_field.png" width="250px" height="150px">
+              <img src="img\jeju_rape_blosomes.png" width="250px" height="150px">
+              <img src="img\jeju_rape_blosomes.png" width="250px" height="150px">
+              <img src="img\jeju_field.png" width="250px" height="150px">
+              <img src="img\jeju_rape_blosomes.png" width="250px" height="150px">
 
-</html>
+            </div><!--country_picture -->
+        </div><!-- column-->
+
+        </div><!-- country_name-->
+
+      </div><!-- country-->
+</body></html>
