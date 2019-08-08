@@ -20,7 +20,7 @@
 
       <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <style>
-    .container2{
+    .mypage_container2{
       display: flex;
       justify-content: space-between;
       flex-direction: row;
@@ -44,10 +44,10 @@
     .text {
       font-size: 17px;
     }
-    .header {
+    .mypage.header {
       height: 100px;
     }
-    .container {
+    .mypage.container {
       padding: 50px;
     }
     .profile {
@@ -76,6 +76,10 @@
       width: 10px;
       background: transparent;
     }
+    .mypage_container{
+        padding: 10%;
+            
+        }
         
     </style>
 </head>
@@ -116,8 +120,8 @@
     </div>
   </nav>
     
-    <div class="container">
-    <div class="header"></div>
+    <div class="mypage_container">
+    <div class="mypage.header"></div>
     <h1>마이페이지</h1>
     <div class="profile">
         <div>
@@ -133,7 +137,7 @@
     </div>
     
         
-    <div class="country" class="container">
+    <div class="country" class="mypage_container">
         <div class="country_name">
         <img class="flag" width="50px" height="30px" src="{% static 'img\Flag_of_Spain.png' %}  ">스페인 - 돈키호테 마을
         <br><br>
@@ -165,7 +169,7 @@
               });
             </script>
           </div><!-- country_name-->
-        <div class="container2">
+        <div class="mypage_container2">
           <div id="moveleft"> ◀ </div>
               <div id="moveright"> ▶ </div>
         </div>
@@ -174,7 +178,7 @@
         
         
         <br><br>
-        <div class="country" class="container">
+        <div class="country" class="mypage_container">
           <div class="country_name">
           <img width="50px" height="30px" src="{% static 'img\Flag_of_South_Korea.png' %}">대한민국 - 제주 00 마을
           <br><br>
@@ -208,12 +212,25 @@
 
             </div><!-- country_name-->
 
-            <div class="container2">
+            <div class="mypage_container2">
               <div id="moveleft2"> ◀ </div>
                   <div id="moveright2"> ▶ </div>
             </div>
           </div><!-- country-->
     </div>
+    
+    
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/creative.js' %}"></script>
+    
     </body>
 </html>
 
