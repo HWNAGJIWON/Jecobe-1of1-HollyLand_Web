@@ -1,10 +1,173 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>MY PAGE</title>
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <style>
+    .container2{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    .country {
+      padding: 0;
+      margin: 0;
+    }
+    .country_picture1 {
+      width: auto;
+      height: 170px;
+      overflow-x: scroll;
+      white-space: nowrap;
+    }
+    .country_picture2 {
+      width: auto;
+      height: 170px;
+      overflow-x: scroll;
+      white-space: nowrap;
+    }
+    .text {
+      font-size: 17px;
+    }
+    .header {
+      height: 100px;
+    }
+    .container {
+      padding: 50px;
+    }
+    .profile {
+      margin: 30px;
+    }
+    .profile_image {
+      float: left;
+      width: 150px;
+      height: 150px;
+      border: 1px solid lightgray;
+      background-color: lightgray;
+      border-radius: 75px;
+    }
+    .profile_inform {
+      padding: 30px 50px 50px 200px;
+    }
+    .user_name {
+      font-size: 1.8em;
+    }
+
+    .country_picture1::-webkit-scrollbar  {
+      width: 10px;
+      background: transparent;
+    }
+    .country_picture2::-webkit-scrollbar {
+      width: 10px;
+      background: transparent;
+    }
+        
+    </style>
 </head>
 <body>
-    <h1>my page</h1>
-</body>
+    <div class="container">
+    <div class="header"></div>
+    <h1>마이페이지</h1>
+    <div class="profile">
+    <div class="profile_image">
+    </div>
+    <div class="profile_inform">
+        <b class="user_name">OOO 님</b><br>
+        <a href="       "
+           class="user_inform">프로필 수정</a><br>
+        <a href="       "
+        class="user_inform">계정 수정</a><br>
+    </div>
+    </div>
+    
+        
+    <div class="country" class="container">
+        <div class="country_name">
+        <img class="flag" width="50px" height="30px" src="{% static 'img\Flag_of_Spain.png' %}  ">스페인 - 돈키호테 마을
+        <br><br>
+        <div class="wrap">
+            <div class="country_picture1" height="150px">
+              <img width="250px" height="150px" src="{% static 'img\spain_cathedral.png' %}">
+              <img width="250px" height="150px" src="{% static 'img\spain_beach.png' %}">
+              <img width="250px" height="150px" src="{% static 'img\spain_windmill.png' %}">
+              <img width="250px" height="150px" src="{% static 'img\spain_toledo.JPG' %}">
+              <img width="250px" height="150px" src="{% static 'img\spain_cathedral.png' %}">
+              <img width="250px" height="150px" src="{% static 'img\spain_beach.png' %}">
+            </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+                $('#moveleft').bind('click', function() {
+                  $('.country_picture1').animate({
+                    scrollLeft: '+=100'
+                  }, 680,"swing");
+                });
+                $('#moveright').bind('click', function() {
+                  $('.country_picture1').animate({
+                    scrollLeft: '-=100'
+                  }, 680,"swing");
+                });
+
+                // 애니메이션 효과로 자연스럽게 이동됨, 0.68초
+                // 애니메이션 효과없이 즉시 해당 위치 0 지점으로 이동함
+              });
+            </script>
+          </div><!-- country_name-->
+        <div class="container2">
+          <div id="moveleft"> ◀ </div>
+              <div id="moveright"> ▶ </div>
+        </div>
+        </div><!-- country-->
+        
+        
+        
+        <br><br>
+        <div class="country" class="container">
+          <div class="country_name">
+          <img width="50px" height="30px" src="{% static 'img\Flag_of_South_Korea.png' %}">대한민국 - 제주 00 마을
+          <br><br>
+            <div class="wrap">
+              <div class="country_picture2" height="150px">
+                 <img width="250px" height="150px" src="{% static 'img\jeju_beach_and_road.png' %}">
+                 <img width="250px" height="150px" src="{% static 'img\jeju_field.png' %}">
+                 <img width="250px" height="150px" src="{% static 'img\jeju_rape_blosomes.png' %}">
+                 <img width="250px" height="150px" src="{% static 'img\jeju_field.png' %}">
+                 <img width="250px" height="150px" src="{% static 'img\jeju_rape_blosomes.png' %}">
+                 <img width="250px" height="150px" src="{% static 'img\jeju_beach_and_road.png' %}">
+                 <img width="250px" height="150px" src="{% static 'img\jeju_field.png' %}">
+
+            </div><!--country_picture -->
+
+              </div><!-- column-->
+              <script>
+                $(document).ready(function() {
+                  $('#moveleft2').bind('click', function() {
+                    $('.country_picture2').animate({
+                      scrollLeft: '+=100'
+                    }, 680,"swing");
+                  });
+                  $('#moveright2').bind('click', function() {
+                    $('.country_picture2').animate({
+                      scrollLeft: '-=100'
+                    }, 680,"swing");
+                  });
+                });
+              </script>
+
+            </div><!-- country_name-->
+
+            <div class="container2">
+              <div id="moveleft2"> ◀ </div>
+                  <div id="moveright2"> ▶ </div>
+            </div>
+          </div><!-- country-->
+    </div>
+    </body>
 </html>
+
+        
+            
+            
+            
