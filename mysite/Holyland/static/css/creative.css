@@ -10653,7 +10653,7 @@ hr.light {
   #mainNav .navbar-name {
     font-size: 2rem;
     padding-left: 0;
-     
+
 
   }
   #mainNav .navbar-nav .nav-item .nav-link {
@@ -11002,16 +11002,34 @@ display: none;
     list-style: none;
     font-size: 2rem;
 }
+
+.img-navbar {
+    width:4rem;
+    height:auto;
+    
+}
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
 /* Next & previous buttons */
- .next {
+.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   padding: 16px;
-  color: black;
+  margin-top: -22px;
+  color: white;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -11024,10 +11042,11 @@ display: none;
 }
 
 /* On hover, add a grey background color */
- .next:hover {
+.prev:hover, .next:hover {
   background-color: #f1f1f1;
   color: black;
 }
+<<<<<<< HEAD
 .img-navbar {
     width:4rem;
     height:auto;
@@ -11036,3 +11055,5 @@ display: none;
 .taewan {
     font-size:1.5rem;
 }
+=======
+>>>>>>> 4f33f48b52be996998803a15fb9c2045a03122e5
