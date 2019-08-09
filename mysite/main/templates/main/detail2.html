@@ -75,7 +75,7 @@
           <h1 class="text-black font-weight-bold mt-0">돈키호테의 마을</h1>
           <hr class="divider my-4">                
           <div class = "eltoboso-search text-right">
-             <a href="#open-moda"><li calss="book-info-font">책 정보</li></a>
+            <center> <a href="#open-moda"><li><small>&nbsp;<b>책 정보</b></small></li></a></center>
           </div>
           <div id="open-moda" class="modal-window">
           <div>
@@ -95,15 +95,17 @@
         </div>
         <ul class="tree1">
             <li class = "villeage-icon">
-                <input type="checkbox" id="root7">
+                <input type="checkbox" id="root7" onclick="alert('좋아요한 여행지에 추가되었습니다.')">
                 <label for="root7">
                     
                 </label>
             <li>&ensp;</li>
             <li><a href='#' class="icon-upload"><span class="label"></span></a></li>
         </ul>
-          <h4 class="text-primary-50 mb-4">"책 속에서 돈키호테가 지나쳤던 마을. <br>실제로 많은 여행객들이
+            <br>
+          <h4 class="text-primary-50 mb-4"><br>"책 속에서 돈키호테가 지나쳤던 마을. <br>실제로 많은 여행객들이
 돈키호테를 생각하며 패키지로 다녀보자"</h4>
+            <br><br>
           <img class="img-fluid col-10" src="{% static 'img/map.png' %}" alt="">
         </div>
           
@@ -115,16 +117,18 @@
           <div class = toboso>
                 <div class="toboso-img">
                       <div id="slide">
+                         
                         <input type="radio" name="pos" id="pos1" checked>
                         <input type="radio" name="pos" id="pos2">
                         <input type="radio" name="pos" id="pos3">
                         <input type="radio" name="pos" id="pos4">
                         <ul>
                           <li><img src="{% static 'img/consuegra.jpg' %}" class="toimg"></li>
+                          <li><img src="{% static 'img/consuegra1.jpg' %}" class="toimg"></li>
                           <li><img src="{% static 'img/consuegra.jpg' %}" class="toimg"></li>
-                          <li><img src="{% static 'img/consuegra.jpg' %}" class="toimg"></li>
-                          <li><img src="{% static 'img/consuegra.jpg' %}" class="toimg"></li>
+                          <li><img src="{% static 'img/consuegra1.jpg' %}" class="toimg"></li>
                         </ul>
+                          <br><br>
                         <p class="pos">
                           <label for="pos1"></label>
                           <label for="pos2"></label>
@@ -186,10 +190,10 @@
                     <input type="radio" name="pos" id="pos3">
                     <input type="radio" name="pos" id="pos4">
                     <ul>
+                      <li><img src="{% static 'img/eltoboso2.jpg' %}" class="toimg"></li>
+                      <li><img src="{% static 'img/eltoboso2.jpg' %}" class="toimg"></li>
                       <li><img src="{% static 'img/eltoboso.jpg' %}" class="toimg"></li>
-                      <li><img src="{% static 'img/eltoboso.jpg' %}" class="toimg"></li>
-                      <li><img src="{% static 'img/eltoboso.jpg' %}" class="toimg"></li>
-                      <li><img src="{% static 'img/eltoboso.jpg' %}" class="toimg"></li>
+                      <li><img src="{% static 'img/eltoboso2.jpg' %}" class="toimg"></li>
                     </ul>
                     <p class="pos">
                       <label for="pos1"></label>
@@ -253,7 +257,7 @@
                 <input type="radio" name="pos" id="pos3">
                 <input type="radio" name="pos" id="pos4">
                 <ul>
-                  <li><img src="{% static 'img/eltoboso.jpg' %}" class="toimg"></li>
+                  <li><img src="{% static 'img/ossa2.jpg' %}" class="toimg"></li>
                   <li><img src="{% static 'img/eltoboso.jpg' %}" class="toimg"></li>
                   <li><img src="{% static 'img/eltoboso.jpg' %}" class="toimg"></li>
                   <li><img src="{% static 'img/eltoboso.jpg' %}" class="toimg"></li>
