@@ -73,11 +73,23 @@
       <div class="row">
         <div class="col-6 pl-5 text-center">
           <h1 class="text-black font-weight-bold mt-0">돈키호테의 마을</h1>
-          <hr class="divider my-4">                
+          <hr class="divider my-4">          
+            
           <div class = "eltoboso-search text-right">
-
-            <center> <a href="#open-moda"><li><small>&nbsp;<b>책 정보</b></small></li></a></center>
-
+             
+              <center><a href="#open-moda"><li><small><small>&nbsp;<b>책 정보</b></small></small></li></a></center>
+            </div><div>
+              <ul class="tree1">
+            <li class = "villeage-icon">
+                <input type="checkbox" id="root7" onclick="alert('좋아요한 여행지에 추가되었습니다.')">
+                <label for="root7">
+                    
+                </label>
+            <li>&ensp;</li>
+            <li><a href='#' class="icon-upload"><span class="label"></span></a></li>
+        </ul>
+              
+              
           </div>
           <div id="open-moda" class="modal-window">
           <div>
@@ -95,20 +107,13 @@
 
           </div>
         </div>
-        <ul class="tree1">
-            <li class = "villeage-icon">
-                <input type="checkbox" id="root7" onclick="alert('좋아요한 여행지에 추가되었습니다.')">
-                <label for="root7">
                     
-                </label>
-            <li>&ensp;</li>
-            <li><a href='#' class="icon-upload"><span class="label"></span></a></li>
-        </ul>
-            <br>
-          <h4 class="text-primary-50 mb-4"><br>"책 속에서 돈키호테가 지나쳤던 마을. <br>실제로 많은 여행객들이
-돈키호테를 생각하며 패키지로 다녀보자"</h4>
-            <br><br>
-          <img class="img-fluid col-10" src="{% static 'img/map.png' %}" alt="">
+<!--원위치 -->
+            
+          <h4 class="text-primary-50 mb-4"><small>"책 속에서 돈키호테가 지나쳤던 마을. <br>실제로 많은 여행객들이
+돈키호테를 생각하며 패키지로 다녀보자"</small></h4>
+
+          <img class="img-fluid col-6" src="{% static 'img/map.png' %}" alt="">
         </div>
           
         <div class="col-6 pl-5 text-center">
