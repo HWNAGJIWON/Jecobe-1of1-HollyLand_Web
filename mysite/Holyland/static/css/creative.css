@@ -567,6 +567,13 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+.container2 {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 0;
+  margin-left: 0;
+}
 
 @media (min-width: 576px) {
   .container {
