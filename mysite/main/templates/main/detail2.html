@@ -1,0 +1,318 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Creative - Start Bootstrap Theme</title>
+    
+
+    
+  <!-- Font Awesome Icons -->
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,900|Noto+Sans+TC:900&display=swap&subset=korean" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="{% static 'vendor/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="{% static 'css/fontello.css' %}" rel="stylesheet" >
+  <link href="{% static 'css/creative.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container row">
+        <div class="col-4">
+                <div class="col-7">
+                    <img class="img-fluid" src="{% static 'img/logo_red.png' %}" alt="">
+                </div>
+
+        </div>
+        <div class="col-4 tomandtom">
+            <a class="navbar-brand navbar-name js-scroll-trigger asd" href="#page-top">HOLY LAND</a>
+        </div>
+        <div class="col-4 btn btn-align-right">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="https://summer-qriyc.run.goorm.io/mypage/" >마이페이지</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://summer-qriyc.run.goorm.io/signin/" >로그인</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://summer-qriyc.run.goorm.io/signup/">회원가입</a>
+          </li>
+        </ul>
+      </div>
+        </div>
+      <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">LOGO</a> -->
+      
+      
+    </div>
+  </nav>
+  <!-- About1 Section -->
+  <section class="page-section bg-white mt-5" id="about1">
+    <div class="container-fluid p-0">
+      <div class="row">
+        <div class="col-6 pl-5 text-center">
+          <h1 class="text-black font-weight-bold mt-0">돈키호테의 마을</h1>
+          <hr class="divider my-4">                
+          <div class = "eltoboso-search">
+             <a href="#open-moda"><li>책 정보</li></a>
+          </div>
+          <div id="open-moda" class="modal-window">
+          <div>
+              <a href="#modal-close" title="Close" class="modal-close">Close</a>
+              <a class="btn btn-primary" href="http://znxcx93.blog.me/">책 사러 가기</a>
+          </div>
+        </div>
+        <ul class="tree1">
+            <li class = "villeage-icon">
+                <input type="checkbox" id="root7">
+                <label for="root7">
+                    
+                </label>
+            <li>&ensp;</li>
+            <li><a href='#' class="icon-upload"><span class="label"></span></a></li>
+        </ul>
+          <p class="text-primary-50 mb-4">"책 속에서 돈키호테가 지나쳤던 마을. <br>실제로 많은 여행객들이
+돈키호테를 생각하며 패키지로 다녀보자"</p>
+          <img class="img-fluid col-10" src="{% static 'img/map.png' %}" alt="">
+        </div>
+          
+        <div class="col-6 pl-5 text-center">
+          
+          <div class="mySlides1">
+          <h1 class="text-black font-weight-bold mt-0">꼰수에그라 - Consuegra</h1>
+          <hr class="divider my-4">
+          <div class = toboso>
+                <div class="toboso-img">
+                      <div id="slide">
+                        <input type="radio" name="pos" id="pos1" checked>
+                        <input type="radio" name="pos" id="pos2">
+                        <input type="radio" name="pos" id="pos3">
+                        <input type="radio" name="pos" id="pos4">
+                        <ul>
+                          <li><img src="{% static 'img/consuegra.jpg' %}" class="toimg"></li>
+                          <li><img src="{% static 'img/consuegra.jpg' %}" class="toimg"></li>
+                          <li><img src="{% static 'img/consuegra.jpg' %}" class="toimg"></li>
+                          <li><img src="{% static 'img/consuegra.jpg' %}" class="toimg"></li>
+                        </ul>
+                        <p class="pos">
+                          <label for="pos1"></label>
+                          <label for="pos2"></label>
+                          <label for="pos3"></label>
+                          <label for="pos4"></label>
+                        </p>
+                      </div>
+                </div>
+              
+        <ul class="tree">
+           <li class = "villeage-icon">
+                  <input type="checkbox" id="root">
+                  <label for="root">detail</label>
+                  <ul>
+                      <li>어떠한 마을이다</li>
+                 </ul>
+            </li>
+
+            <li class = "villeage-icon">
+                <input type="checkbox" id="root2">
+                <label for="root2">위치</label>
+                <ul>
+                  <li>스페인 어느시 어느 동네</li>
+                </ul>
+            </li>
+
+            <li class = "villeage-icon">
+                <input type="checkbox" id="root3">
+                <label for="root3">명소</label>
+                <ul>
+                    <li>1. 입장료</li>
+                    <li>2. 어떠한 곳</li>
+                </ul>
+             </li>
+         </ul>
+          </div>
+          <input type="button" class = "btn btn-primary" value="다른 사람들의 여행은?">
+      </div>
+
+      <div class="mySlides1">
+
+          <h1 class="text-black font-weight-bold mt-0">엘 또보소 - EL TOBOSO</h1>
+          <hr class="divider my-4">
+          <div class = toboso>
+              <div class="toboso-img">
+                  <div id="slide">
+                    <input type="radio" name="pos" id="pos1" checked>
+                    <input type="radio" name="pos" id="pos2">
+                    <input type="radio" name="pos" id="pos3">
+                    <input type="radio" name="pos" id="pos4">
+                    <ul>
+                      <li><img src="{% static 'img/eltoboso.jpg' %}" class="toimg"></li>
+                      <li><img src="{% static 'img/eltoboso.jpg' %}" class="toimg"></li>
+                      <li><img src="{% static 'img/eltoboso.jpg' %}" class="toimg"></li>
+                      <li><img src="{% static 'img/eltoboso.jpg' %}" class="toimg"></li>
+                    </ul>
+                    <p class="pos">
+                      <label for="pos1"></label>
+                      <label for="pos2"></label>
+                      <label for="pos3"></label>
+                      <label for="pos4"></label>
+                    </p>
+                  </div>
+              </div>
+
+              <ul class="tree">
+           <li class = "villeage-icon">
+                  <input type="checkbox" id="root">
+                  <label for="root">detail</label>
+                  <ul>
+                      <li>어떠한 마을이다</li>
+                 </ul>
+            </li>
+
+            <li class = "villeage-icon">
+                <input type="checkbox" id="root2">
+                <label for="root2">위치</label>
+                <ul>
+                  <li>스페인 어느시 어느 동네</li>
+                </ul>
+            </li>
+
+            <li class = "villeage-icon">
+                <input type="checkbox" id="root3">
+                <label for="root3">명소</label>
+                <ul>
+                    <li>1. 입장료</li>
+                    <li>2. 어떠한 곳</li>
+                </ul>
+             </li>
+         </ul>
+          </div>
+          <input type="button" class = "btn btn-primary" value="다른 사람들의 여행은?">
+      </div>
+            
+            
+      <div class="mySlides1">
+          <h1 class="text-black font-weight-bold mt-0">엘 또보소 - EL TOBOSO</h1>
+          <hr class="divider my-4">
+          <div class = toboso>
+            <div class="toboso-img">
+              <div id="slide">
+                <input type="radio" name="pos" id="pos1" checked>
+                <input type="radio" name="pos" id="pos2">
+                <input type="radio" name="pos" id="pos3">
+                <input type="radio" name="pos" id="pos4">
+                <ul>
+                  <li><img src="{% static 'img/eltoboso.jpg' %}" class="toimg"></li>
+                  <li><img src="{% static 'img/eltoboso.jpg' %}" class="toimg"></li>
+                  <li><img src="{% static 'img/eltoboso.jpg' %}" class="toimg"></li>
+                  <li><img src="{% static 'img/eltoboso.jpg' %}" class="toimg"></li>
+                </ul>
+                <p class="pos">
+                  <label for="pos1"></label>
+                  <label for="pos2"></label>
+                  <label for="pos3"></label>
+                  <label for="pos4"></label>
+                </p>
+              </div>
+
+                  </div>
+
+            <ul class="tree">
+           <li class = "villeage-icon">
+                  <input type="checkbox" id="root">
+                  <label for="root">detail</label>
+                  <ul>
+                      <li>어떠한 마을이다</li>
+                 </ul>
+            </li>
+
+            <li class = "villeage-icon">
+                <input type="checkbox" id="root2">
+                <label for="root2">위치</label>
+                <ul>
+                  <li>스페인 어느시 어느 동네</li>
+                </ul>
+            </li>
+
+            <li class = "villeage-icon">
+                <input type="checkbox" id="root3">
+                <label for="root3">명소</label>
+                <ul>
+                    <li>1. 입장료</li>
+                    <li>2. 어떠한 곳</li>
+                </ul>
+             </li>
+         </ul>
+          </div>
+          <input type="button" class = "btn btn-primary" value="다른 사람들의 여행은?">
+      </div>
+
+    <script>
+    var slideIndex = [1,1];
+    var slideId = ["mySlides1", "mySlides2"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
+
+    function showSlides(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      x[slideIndex[no]-1].style.display = "block";
+    }
+    </script>
+    </div>
+
+
+      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+
+
+    </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+    
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/creative.js' %}"></script>
+
+</body>
+
+</html>
