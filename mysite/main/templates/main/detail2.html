@@ -35,7 +35,10 @@
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container2 row">
         <div class="col-4">
-            <img class="img-navbar" src="{% static 'img/logo_red.png' %}" alt="">
+                <div class="col-7">
+                    <img class="img-fluid" src="{% static 'img/logo_red.png' %}" alt="">
+                </div>
+
         </div>
         <div class="col-4 tomandtom">
             <a class="navbar-brand navbar-name js-scroll-trigger asd" href="#page-top">HOLY LAND</a>
@@ -48,13 +51,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto my-2 my-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="../mypage/" >마이페이지</a>
+            <a class="nav-link" href="https://summer-qriyc.run.goorm.io/mypage/" >마이페이지</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../signin/" >로그인</a>
+            <a class="nav-link" href="https://summer-qriyc.run.goorm.io/signin/" >로그인</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./signup/">회원가입</a>
+            <a class="nav-link" href="https://summer-qriyc.run.goorm.io/signup/">회원가입</a>
           </li>
         </ul>
       </div>
@@ -124,7 +127,7 @@
         <ul class="tree">
            <li class = "villeage-icon">
                   <input type="checkbox" id="root">
-                  <label for="root" class="ml-5 lead">&ensp;&ensp; detail</label>
+                  <label for="root">&ensp; &ensp; detail</label>
                   <ul>
                       <li>어떠한 마을이다</li>
                  </ul>
@@ -132,7 +135,7 @@
 
             <li class = "villeage-icon">
                 <input type="checkbox" id="root2">
-                <label for="root2" class="ml-5 lead">&ensp;&ensp; 위치</label>
+                <label for="root2">&ensp; &ensp; 위치</label>
                 <ul>
                   <li>스페인 어느시 어느 동네</li>
                 </ul>
@@ -140,7 +143,7 @@
 
             <li class = "villeage-icon">
                 <input type="checkbox" id="root3">
-                <label for="root3" class="ml-5 lead">&ensp;&ensp; 명소</label>
+                <label for="root3"><h13>&ensp; &ensp; 명소</h13></label>
                 <ul>
                     <li>1. 입장료</li>
                     <li>2. 어떠한 곳</li>
@@ -148,9 +151,9 @@
              </li>
          </ul>
           </div>
-          <input type="button" class = "btn btn-primary" value="다른 사람들의 여행은?" onclick="window.open('https://www.instagram.com/explore/tags/%EA%BC%B0%EC%88%98%EC%97%90%EA%B7%B8%EB%9D%BC/?hl=ko', '_blank', 'width=730, height=750, toolbar=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no' );">
+          <input type="button" class = "btn btn-primary" value="다른 사람들의 여행은?">
+      </div>
 
-            
       <div class="mySlides1">
 
           <h1 class="text-black font-weight-bold mt-0">엘 또보소 - EL TOBOSO</h1>
@@ -204,7 +207,7 @@
              </li>
          </ul>
           </div>
-          <input type="button" class = "btn btn-primary" value="다른 사람들의 여행은?" onclick="window.open('https://www.instagram.com/explore/tags/%EA%BC%B0%EC%88%98%EC%97%90%EA%B7%B8%EB%9D%BC/?hl=ko', '_blank', 'width=730, height=750, toolbar=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no' );">
+          <input type="button" class = "btn btn-primary" value="다른 사람들의 여행은?">
       </div>
             
             
@@ -261,7 +264,7 @@
              </li>
          </ul>
           </div>
-          <input type="button" class = "btn btn-primary" value="다른 사람들의 여행은?" onclick="window.open('https://www.instagram.com/explore/tags/eltoboso/?hl=ko', '_blank', 'width=730, height=750, toolbar=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no' );">
+          <input type="button" class = "btn btn-primary" value="다른 사람들의 여행은?">
       </div>
 
     <script>
@@ -292,20 +295,23 @@
     </div>
 
 
+    </div>
         </div>
-     
+      </div>
+    </div>
   </section>
-    <!-- Bootstrap core JavaScript -->
+    
+    
+  <!-- Bootstrap core JavaScript -->
   <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
   <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
-  <!-- Plugin JaQvaScript -->
+  <!-- Plugin JavaScript -->
   <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
   <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
 
   <!-- Custom scripts for this template -->
   <script src="{% static 'js/creative.js' %}"></script>
-    
 
 </body>
 
