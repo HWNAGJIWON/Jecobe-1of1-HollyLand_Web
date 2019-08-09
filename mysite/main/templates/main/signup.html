@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>SIGNUP</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>MY PAGE</title>
@@ -35,19 +35,20 @@
         }    /*로고와 로그인사이의 간격*/
         
         .form-control{
-            width : 100%;
-            height : 40%;
+            margin-left : 10%;
+            width : 80%;
+            height : 50%;
             
         }
         .form{
             display:flex;
             justify-content:center;
             flex-direction : column;
-            padding : 10%;
+            padding : 0 10%;
         }
         .form-text{
             width:100%;
-            text-align : left;
+            text-align : center;
         }
         .btn{
             width : 25%;
@@ -61,13 +62,12 @@
 </head>
 <body>
      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-         <div class="without_logoBar">
     <div class="container2 row">
         <div class="col-4">
             <div class="col-6">
                 <img class="img-navbar" src="{% static 'img/logo_red.png' %}" alt="">
             </div>
-            
+
         </div>
         <div class="col-4 tomandtom">
             <a class="navbar-brand navbar-name js-scroll-trigger" href="../">HOLY LAND</a>
@@ -79,7 +79,7 @@
 
              <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                  
+
                   <li class="nav-item">
                     <a class="nav-link" href="/signin">로그인</a>
                   </li>
@@ -93,7 +93,7 @@
         <div class="container12">
     
              
-        <label id="login" class="exampleInputEmail1" for="exampleInputEmail1">회원가입</label><br>
+        <label id="login" class="exampleInputEmail1" for="exampleInputEmail1">회원가입</label>
         <div class="form">
         <div class="form-group">
       <div class="colcolcolcol">
@@ -131,9 +131,26 @@
       </label>
     </div>
   </div>
-          <br>
-  <button type="submit" class="btn btn-primary">Sign in</button>
-</form>
-        </div>
+      <br>
+  <button type="submit" class="btn btn-primary">Signin</button>
+</div>    <!-- class="form" -->
+    
+    </div> <!-- class= "column"-->
+</div><!-- without_logoBar -->
+          </div>
+
+    <section class="footer-section">
+      <img class="img-fluid" src="{% static 'img/footer.png' %}" alt="">
+  </section>
+<!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JaQvaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/creative.js' %}"></script>
 </body>
 </html>
