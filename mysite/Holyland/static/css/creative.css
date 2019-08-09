@@ -567,6 +567,13 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+.container2 {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 0;
+  margin-left: 0;
+}
 
 @media (min-width: 576px) {
   .container {
@@ -10645,7 +10652,8 @@ hr.light {
   }
   #mainNav .navbar-name {
     font-size: 2rem;
-    padding-left: 30%;
+    padding-left: 0;
+
 
   }
   #mainNav .navbar-nav .nav-item .nav-link {
@@ -10994,15 +11002,32 @@ display: none;
     list-style: none;
     font-size: 2rem;
 }
+
+.img-navbar {
+    width:4rem;
+    height:auto;
+    
+}
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
 /* Next & previous buttons */
- .next {
+.prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 100%;
+  top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: black;
+  color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -11017,7 +11042,18 @@ display: none;
 }
 
 /* On hover, add a grey background color */
- .next:hover {
+.prev:hover, .next:hover {
   background-color: #f1f1f1;
   color: black;
 }
+<<<<<<< HEAD
+.img-navbar {
+    width:4rem;
+    height:auto;
+    
+}
+.taewan {
+    font-size:1.5rem;
+}
+=======
+>>>>>>> 4f33f48b52be996998803a15fb9c2045a03122e5
