@@ -21,96 +21,117 @@
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="{% static 'css/creative.css' %}" rel="stylesheet">
 
-      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <style>
-        .container12{
-            width:80%;
-            
-            padding:13% 10% 100px 10%;
+        #login{
+            font-size:2.5em;
+            padding : 5%;
         }
+        .body{
+            font-size : 100%;
+        }
+        .without_logoBar{
+            margin : 10%;
+        }    /*로고와 로그인사이의 간격*/
+        
+        .form-control{
+            width : 100%;
+            height : 40%;
+            
+        }
+        .form{
+            display:flex;
+            justify-content:center;
+            flex-direction : column;
+            padding : 10%;
+        }
+        .form-text{
+            width:100%;
+            text-align : left;
+        }
+        .btn{
+            width : 25%;
+        }
+        
+        
+       
+        
+      
     </style>
 </head>
 <body>
      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-    <div class="container row">
+         <div class="without_logoBar">
+    <div class="container2 row">
         <div class="col-4">
-                <div class="col-7">
-                    <img class="img-fluid" src="{% static 'img/logo_red.png' %}" alt="">
-                </div>
-
+            <div class="col-6">
+                <img class="img-navbar" src="{% static 'img/logo_red.png' %}" alt="">
+            </div>
+            
         </div>
         <div class="col-4 tomandtom">
-            <a class="navbar-brand navbar-name js-scroll-trigger asd" href="../">HOLY LAND</a>
+            <a class="navbar-brand navbar-name js-scroll-trigger" href="../">HOLY LAND</a>
         </div>
         <div class="col-4 btn btn-align-right">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto my-2 my-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="/mypage/" >마이페이지</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/signin" >로그인</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/signup">회원가입</a>
-          </li>
-        </ul>
-      </div>
+             <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="/signin">로그인</a>
+                  </li>
+                </ul>
+              </div>
+        </div>        
         </div>
-      <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">LOGO</a> -->
-      
-      
-    </div>
-  </nav>
-    <div class="container12">
-   <form>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Password</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-    </div>
+    </nav>
+    
+    <div class="without_logoBar">
+        <div class="container12">
+    
+             
+        <label id="login" class="exampleInputEmail1" for="exampleInputEmail1">회원가입</label><br>
+        <div class="form">
+        <div class="form-group">
+      <div class="colcolcolcol">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="이메일을 입력하세요"><br>
+    <small id="emailHelp" class="form-text text-muted"></small>
+ 
+        <div class="form-group">
+      <div class="colcolcolcol">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="비밀번호를 입력하세요">
+          <small id="emailHelp" class="form-text text-muted">8-16자리의 암호를 입력하세요. 영문, 숫자가 하나 이상 포함되어야하며, 영문 중 하나 이상은 반드시 대문자여야 합니다.</small>
+    <small id="emailHelp" class="form-text text-muted"></small>
+<!--         We'll never share your email with anyone else.   -->
   </div>
   <div class="form-group">
-    <label for="inputAddress">Address</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      <div class="colcolcolcol">
+    <label for="exampleInputPassword1"></label>
+    
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호를 다시 입력하세요">
+      
   </div>
-  <div class="form-group">
-    <label for="inputAddress2">Address 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputCity">City</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputState">State</label>
-      <select id="inputState" class="form-control">
-        <option selected>Choose...</option>
-        <option>...</option>
-      </select>
-    </div>
-    <div class="form-group col-md-2">
-      <label for="inputZip">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
-  </div>
+      </div>
+      </div><!-- form-contr-->
+                </div>
+            
+          
+            
+            
+            <br><br>
+
   <div class="form-group">
     <div class="form-check">
       <input class="form-check-input" type="checkbox" id="gridCheck">
       <label class="form-check-label" for="gridCheck">
-        Check me out
+        정보 수집에 동의합니다.
       </label>
     </div>
   </div>
+          <br>
   <button type="submit" class="btn btn-primary">Sign in</button>
 </form>
         </div>

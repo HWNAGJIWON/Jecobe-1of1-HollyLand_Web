@@ -21,7 +21,7 @@
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="{% static 'css/creative.css' %}" rel="stylesheet">
 
-      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     
     
     
@@ -34,7 +34,7 @@
             font-size : 100%;
         }
         .without_logoBar{
-            margin : 25%;
+            margin : 10%;
         }    /*로고와 로그인사이의 간격*/
         
         .form-control{
@@ -63,37 +63,40 @@
     
     
     
-<body>
-     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-    <div class="container2 row">
-        <div class="col-4">
-            <div class="col-6">
-                <img class="img-navbar" src="{% static 'img/logo_red.png' %}" alt="">
-            </div>
-            
-        </div>
-        <div class="col-4 tomandtom">
-            <a class="navbar-brand navbar-name js-scroll-trigger" href="../">HOLY LAND</a>
-        </div>
-        <div class="col-4 btn btn-align-right">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="/signup">회원가입</a>
-                  </li>
-                </ul>
-              </div>
-        </div>        
-        </div>
-    </nav>
-    <div class="without_logoBar">
-    <div class="container12">
     
+    
+    
+    
+    
+<body>
+                                             <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+                                            <div class="container2 row">
+                                                <div class="col-4">
+                                                    <div class="col-6">
+                                                        <img class="img-navbar" src="{% static 'img/logo_red.png' %}" alt="">
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-4 tomandtom">
+                                                    <a class="navbar-brand navbar-name js-scroll-trigger" href="../">HOLY LAND</a>
+                                                </div>
+                                                <div class="col-4 btn btn-align-right">
+                                                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                                                        <span class="navbar-toggler-icon"></span>
+                                                    </button>
+
+                                                     <div class="collapse navbar-collapse" id="navbarResponsive">
+                                                        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+
+                                                          <li class="nav-item">
+                                                            <a class="nav-link" href="/signup">회원가입</a>
+                                                          </li>
+                                                        </ul>
+                                                      </div>
+                                                </div>        
+                                                </div>
+                                            </nav>
+    <div class="without_logoBar">
   
     <label id="login" class="exampleInputEmail1" for="exampleInputEmail1">로그인</label><br>
         <div class="form">
@@ -103,9 +106,7 @@
     <small id="emailHelp" class="form-text text-muted"></small>
 <!--         We'll never share your email with anyone else.   -->
   </div>
-  <div class="form-group">
-      <div class="colcolcolcol">
-    <label for="exampleInputPassword1"></label>
+ 
     
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호를 입력하세요">
       <small id="emailHelp" class="form-text text-muted">8-16자리의 암호를 입력하세요. 영문, 숫자가 하나 이상 포함되어야하며, 영문 중 하나 이상은 반드시 대문자여야 합니다.</small>
@@ -114,7 +115,7 @@
       </div><!-- form-contr-->
   <div class="form-group form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    <label class="form-check-label" for="exampleCheck1">아이디 저장하기</label>
       <br>
       
       <br>
