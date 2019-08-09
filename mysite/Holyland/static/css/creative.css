@@ -10795,10 +10795,13 @@ header.masthead h1 {
 .eltoboso-search li:before{
   content: '\e802';
   font-family: fontello;
+  font-size: 2rem;
+    
 }
 .eltoboso-search li{
     display:inline;
     text-decoration:none;
+    font-size: 2rem;
 }
 
 
@@ -10880,6 +10883,7 @@ body{
     .tree label:before{
       content:'\e803';
       font-family: fontello;
+      font-size: 2rem;
     }
     .tree input[type="checkbox"] {
   display: none;
@@ -10961,11 +10965,13 @@ body{
     margin-left: 60%;
     margin-top: 0;
     margin-bottom: 0;
+    font-size: 2rem;
   }
   .tree1 *:before{
     width:17px;
     height:17px;
     display:inline-block;
+      font-size: 2rem;
   }
       .tree1 label{
     cursor: pointer;
@@ -10973,6 +10979,7 @@ body{
   .tree1 label:before{
     content:'\e804';
     font-family: fontello;
+    font-size: 2rem;
   }
   .tree1 input[type="checkbox"] {
 display: none;
@@ -10981,11 +10988,11 @@ display: none;
 display: none;
 }
 .tree1 input[type="checkbox"]:checked+label:before{
-content:'\e805';
-font-family: fontello;
-color: red;
-list-style: none;
-
+    content:'\e805';
+    font-family: fontello;
+    color: red;
+    list-style: none;
+    font-size: 2rem;
 }
 /* Next & previous buttons */
  .next {
