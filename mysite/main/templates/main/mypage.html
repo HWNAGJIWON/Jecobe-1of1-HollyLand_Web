@@ -18,8 +18,18 @@
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="{% static 'css/creative.css' %}" rel="stylesheet">
 
-      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+     <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>\
     <style>
+    #mypage_container{
+        margin :10%;
+        text-align : left
+     }
+      .mypage_h1_plus_total_profile{
+            margin : 10%;
+    }
     .mypage_container2{
       display: flex;
       justify-content: space-between;
@@ -51,7 +61,7 @@
       padding: 50px;
     }
     .profile {
-      margin: 30px;
+      padding-top:10%;
     }
     .profile_image {
       float: left;
@@ -62,7 +72,8 @@
       border-radius: 75px;
     }
     .profile_inform {
-      padding: 30px 50px 50px 200px;
+      padding: 5px 50px 50px 200px;
+        
     }
     .user_name {
       font-size: 1.8em;
@@ -76,10 +87,8 @@
       width: 10px;
       background: transparent;
     }
-    .mypage_container{
-        padding: 10%;
-            
-        }
+        
+    
         
     </style>
 </head>
@@ -87,10 +96,7 @@
      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container row">
         <div class="col-4">
-                <div class="col-7">
-                    <img class="img-fluid" src="{% static 'img/logo_red.png' %}" alt="">
-                </div>
-
+            <img class="img-navbar" src="{% static 'img/logo_red.png' %}" alt="">
         </div>
         <div class="col-4 tomandtom">
             <a class="navbar-brand navbar-name js-scroll-trigger asd" href="../">HOLY LAND</a>
@@ -120,8 +126,9 @@
     </div>
   </nav>
     
-    <div class="mypage_container">
+    <div id="mypage_container">
     <div class="mypage.header"></div>
+    <div class="mypage_h1_plus_total_profile">
     <h1>마이페이지</h1>
     <div class="profile">
         <div>
@@ -135,9 +142,10 @@
         class="user_inform">계정 수정</a><br>
     </div>
     </div>
+    </div><!-- profile + 마이페이지 h1-->
     
         
-    <div class="country" class="mypage_container">
+    <div class="country" id="mypage_container">
         <div class="country_name">
         <img class="flag" width="50px" height="30px" src="{% static 'img\Flag_of_Spain.png' %}  ">스페인 - 돈키호테 마을
         <br><br>
@@ -174,11 +182,7 @@
               <div id="moveright"> ▶ </div>
         </div>
         </div><!-- country-->
-        
-        
-        
-        <br><br>
-        <div class="country" class="mypage_container">
+        <div class="country" id="mypage_container">
           <div class="country_name">
           <img width="50px" height="30px" src="{% static 'img\Flag_of_South_Korea.png' %}">대한민국 - 제주 00 마을
           <br><br>
