@@ -1,11 +1,12 @@
 ## 책 속 실제 여행지 소개 웹사이트
 |메인 화면|여행지 소개 화면|
 |---|---|
-|![제코베_메인화면](https://user-images.githubusercontent.com/41350477/211521543-10244e86-3910-46e0-9286-978adc26d7aa.png)|![제코베_여행지화면](https://user-images.githubusercontent.com/41350477/211521453-e8e117ae-5605-49b6-8a59-b0dbe33c2fae.png)|
+|![제코베_메인화면](https://user-images.githubusercontent.com/41350477/211523118-9432c2b8-9ce9-42a6-af09-bf681e38a603.png)|![제코베_여행지화면](https://user-images.githubusercontent.com/41350477/211523038-16d53d6c-3c71-4946-91e5-d746b269d54f.png)|
 
 |돈키호테 속 여행지 소개|마이페이지|
 |---|---|
-|![제코베_돈키호테의마을](https://user-images.githubusercontent.com/41350477/211521480-2cf8d96c-e276-46a8-b83d-cdb1a3acbb90.png)|![제코베_마이페이지](https://user-images.githubusercontent.com/41350477/211521520-ce81c6a4-f6ed-466f-bdc6-cf9908c2e691.png)|
+|![제코베_돈키호테의마을](https://user-images.githubusercontent.com/41350477/211523073-6de2bd51-0752-4855-aeec-1797f8bd76f0.png)|![제코베_마이페이지](https://user-images.githubusercontent.com/41350477/211523094-b226a8a2-2c70-477e-bdec-a04693df6332.png)|
+
 
 
 
